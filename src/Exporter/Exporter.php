@@ -48,15 +48,15 @@ class Exporter
                 $contentType = 'application/vnd.ms-excel';
 
                 break;
+            case 'xlsx':
+                $writer = new XmlExcelWriter('php://output');
+                $contentType = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet';
+                
+                break;
             case 'xml':
                 $writer = new XmlWriter('php://output');
                 $contentType = 'text/xml';
 
-                break;
-            case 'xmlexcel':
-                $writer = new XmlExcelWriter('php://output');
-                $contentType = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet';
-                
                 break;
             case 'json':
                 $writer = new JsonWriter('php://output');
