@@ -17,6 +17,7 @@ use Exporter\Writer\CsvWriter;
 use Exporter\Writer\JsonWriter;
 use Exporter\Writer\XlsWriter;
 use Exporter\Writer\XmlWriter;
+use Exporter\Writer\XmlExcelWriter;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 
 @trigger_error(
